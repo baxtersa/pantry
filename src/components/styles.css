@@ -1,0 +1,30 @@
+.circle_1 {
+  top: 0px;
+  left: 0px;
+}
+
+.circle_2 {
+  top: 30px;
+  left: 30px;
+}
+
+.circle_3 {
+  top: 60px;
+  left: 60px;
+}
+
+.example {
+  width: 350px;
+  height: 350px;
+  padding: 50px;
+
+  background-color: #000;
+}
+
+.example .nested {
+  position: relative;
+}
+
+.example .nested svg {
+  position: absolute;
+}
