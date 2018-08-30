@@ -12,6 +12,6 @@ app.on('window-all-closed', () => {
 app.on('ready', () => {
     console.log(__dirname);
     mainWindow = new BrowserWindow();
-    mainWindow.loadURL('file://' + __dirname + '/index.html');
+    mainWindow.loadURL('file://' + __dirname + '/../public/index.html');
     mainWindow.on('closed', () => mainWindow = null);
 });
