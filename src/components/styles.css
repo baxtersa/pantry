@@ -1,16 +1,28 @@
+@keyframes pulse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .circle_1 {
   top: 0px;
   left: 0px;
+  animation: pulse 1s infinite cubic-bezier(0.895, 0.7, 0.685, 0.22);
 }
 
 .circle_2 {
   top: 30px;
   left: 30px;
+  animation: pulse 3s infinite cubic-bezier(0.895, 0.7, 0.685, 0.22);
 }
 
 .circle_3 {
   top: 60px;
   left: 60px;
+  animation: pulse 2s infinite cubic-bezier(0.895, 0.7, 0.685, 0.22);
 }
 
 .example {
