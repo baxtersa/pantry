@@ -58,8 +58,9 @@ export default class App extends React.Component<any, State> {
     const tw = pw;
 
     return (
-      <div className={styles.example} >
-        <div className={styles.nested} style={{width: 250, height: 250}}>
+      <div className={styles.pantry_app} >
+        <header className={styles.header} />
+        <div className={styles.nested} style={{ width: 250, height: 250 }}>
           <ProgressCircle className={styles.circle_1}
             fillColor="#000000" trackColor="#330000" progressColor='#ff0000'
             size={250}
@@ -75,7 +76,7 @@ export default class App extends React.Component<any, State> {
             cornersWidth={cw}
             progress={this.state.progress} />
           <ProgressCircle className={styles.circle_3}
-           fillColor="#000000" trackColor="#01252d" progressColor='#05bae0'
+            fillColor="#000000" trackColor="#01252d" progressColor='#05bae0'
             size={130}
             progressWidth={pw}
             trackWidth={tw}
