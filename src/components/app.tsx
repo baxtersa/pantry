@@ -36,6 +36,7 @@ export default class App extends React.Component<any, State> {
       } else {
         progress--;
       }
+      progress = Math.min(Math.max(Progress.MIN, progress), Progress.MAX);
 
       direction = progress === Progress.MAX ? Direction.DEC
         : progress === Progress.MIN ? Direction.INC : direction;
@@ -58,7 +59,7 @@ export default class App extends React.Component<any, State> {
 
     return (
       <div className={styles.example} >
-        <div className={styles.nested} >
+        <div className={styles.nested} style={{width: 250, height: 250}}>
           <ProgressCircle className={styles.circle_1}
             fillColor="#000000" trackColor="#330000" progressColor='#ff0000'
             size={250}

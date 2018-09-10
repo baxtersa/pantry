@@ -1,3 +1,7 @@
+body {
+  margin: auto;
+}
+
 @keyframes pulse {
   0% {
     transform: rotate(0deg);
@@ -26,9 +30,10 @@
 }
 
 .example {
-  width: 350px;
-  height: 350px;
-  padding: 50px;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 
   background-color: #000;
 }
